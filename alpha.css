@@ -1,0 +1,483 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans 3', sans-serif;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #f5f5f5;
+}
+
+#bars {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+
+nav>#left>h1 {
+    color: white;
+    font-size: 1rem;
+}
+
+nav>#left>h1>span {
+    font-weight: 100;
+}
+
+#cont {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+#cont>li>a {
+    text-decoration: none;
+    color: white;
+    padding: 0rem 1rem 2rem 1rem;
+    display: block;
+}
+
+#cont>li>a>button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#cont>li>a>button:hover {
+    background-color: rgba(255, 255, 255, 0.375);
+}
+
+#cont>li>a>button:active {
+    background-color: rgba(255, 255, 255, 0.312);
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 200%;
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+#drop {
+    position: relative;
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(140, 136, 136);
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid rgb(245, 237, 237);
+}
+
+#drop:hover #menu {
+    display: block;
+}
+
+#menu a:hover {
+    background-color: rgba(144, 76, 52, 0.6);
+    color: white;
+    border-radius: 5px;
+
+}
+
+#alpha {
+    text-align: center;
+    color: white;
+    margin-top: 7rem;
+}
+
+#alpha>h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+#alpha>p {
+    font-size: 1.2rem;
+    margin-bottom: 2.1rem;
+}
+
+#alpha>button {
+    height: 3rem;
+    width: 12%;
+    border: none;
+    border-radius: 5px;
+    color: gray;
+    /* font-weight: lighter; */
+    margin-right: 1rem;
+}
+
+#alpha>#more {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+#alpha>#more:hover {
+    background-color: rgba(255, 255, 255, 0.388);
+}
+
+#alpha>#more:active {
+    background-color: rgba(255, 255, 255, 0.425);
+}
+
+#info {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+    border-radius: 5px;
+    margin-top: 12rem;
+    padding-top: 1rem;
+}
+
+#info>h2 {
+    font-size: 2rem;
+}
+
+#info>p {
+    font-size: 1.2rem;
+    border-top: 2px solid rgb(205, 202, 202);
+    width: 60%;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+#info>img {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+#icons {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 5px;
+    /* border: none; */
+
+}
+
+#icons>div {
+    /* background-color: red; */
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2rem;
+
+    /* display: grid; */
+}
+
+.fa-bolt-lightning {
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(232, 153, 128);
+    border-radius: 100%;
+    padding: 1.5rem 1.8rem;
+
+}
+
+.fa-chart-area {
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(127, 205, 184);
+    border-radius: 51%;
+    padding: 1.5rem 1.8rem;
+}
+
+.fa-cloud {
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(144, 176, 186);
+    border-radius: 51%;
+    padding: 1.8rem 2rem;
+
+}
+
+.fa-lock {
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(229, 203, 149);
+    border-radius: 51%;
+    padding: 1.5rem 1.8rem;
+
+}
+
+#div1 {
+    border-right: 1px solid rgb(229, 229, 229);
+    border-bottom: 1px solid rgb(229, 229, 229);
+    position: relative;
+    top: 9px;
+    left: 3px;
+}
+
+#div4 {
+    border-top: 1px solid rgb(229, 229, 229);
+    border-left: 1px solid rgb(229, 229, 229);
+}
+
+#cards {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+
+
+}
+
+#cards>div>img {
+    width: 100%;
+    /* border-radius: 5px; */
+
+}
+
+#cards>div {
+    width: 48%;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#cards>div>button {
+    /* height: 50px; */
+    padding: 1rem;
+    width: 30%;
+    border-radius: 5px;
+    border: 2px solid rgb(229, 229, 229);
+    background-color: transparent;
+}
+
+#cards>div>button:hover {
+    background-color: rgba(209, 208, 208, 0.26);
+}
+
+#cards>div>button:active {
+    background-color: rgba(209, 208, 208, 0.26);
+}
+
+#signup {
+    background-color: rgb(232, 153, 128);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+
+}
+
+#signup>h1 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+#signup>p {
+    margin: 0px;
+}
+
+#signup>div>input {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 20px;
+    width: 15%;
+    border: none;
+    color: white;
+    background-color: rgba(211, 207, 207, 0.303);
+}
+
+#signup>div>button {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 55px;
+    width: 10%;
+    border: none;
+    color: rgb(232, 153, 128);
+
+}
+
+footer>#icon {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.fa-twitter {
+    color: rgb(153, 153, 153);
+    font-size: 2rem;
+}
+
+.fa-facebook {
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+}
+
+.fa-instagram {
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+}
+
+.fa-github {
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+}
+
+.fa-dribbble {
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+}
+
+.fa-google-plus {
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+}
+
+
+
+footer>#text {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+    color: rgb(153, 153, 153);
+    margin-bottom: 12rem;
+}
+
+footer>#text>.bord {
+    border-right: 0.5px solid rgb(221, 221, 221);
+    padding-right: 2rem;
+}
+
+footer>#text>li>a {
+    color: rgb(153, 153, 153);
+
+}
+
+@media (max-width : 600px) {
+    body {
+        background-size: 190%;
+        background-position-x: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #bars {
+        display: inline-block;
+        padding: 5px 20px;
+        color: #f5f5f5;
+        background-color: rgba(131, 125, 125, 0.538);
+        border-radius: 5px;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        position :fixed;
+        top: 1%;
+    }
+
+    #alpha {
+        width: 80%;
+        margin: auto;
+        margin-top: 4rem;
+    }
+    #alpha>h2 {
+        font-size: 2rem;
+
+    }
+    
+    #alpha>p {
+        font-size: 1.1rem;
+    }
+
+    #alpha>button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #info {
+        width: 100%;
+        margin-top: 5rem;
+        padding-top: 2rem;
+    }
+
+    #info>h2 {
+        font-size: 1.5rem;
+    }
+    
+    #info>p {
+        font-size: 1.1rem;
+        width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    br{
+        display: none;
+    }
+
+    #icons {
+        width: 100%;
+
+    }
+    #icons>div {
+        width: 100%;
+        display: block;
+        border-bottom: 2px solid #e5e5e5;
+
+    }
+
+    #cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    
+    }
+
+    #cards>div {
+        width: 100%;
+    }
+    #cards>div>button {
+        width: 90%;
+    }
+
+    #signup>h1 {
+        font-size: 1.5rem;
+    }
+    
+
+    #signup>div>input {
+        width: 90%;
+    }
+    
+    #signup>div>button {
+        width: 100%;
+        margin-left: 0px;
+    
+    }
+
+    footer>#text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+}
